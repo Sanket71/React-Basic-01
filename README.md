@@ -11,3 +11,5 @@
 - Minification
 - Bundle
 - Compressing
+
+# learnt what is cache,dist and json file
