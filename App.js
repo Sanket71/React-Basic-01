@@ -22,17 +22,29 @@ import ReactDOM from "react-dom/client";
 </div>
 */
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I am h1 tag"),
-    React.createElement("h2", {}, "I am h2 tag"),
-  ])
-);
+// const parent = React.createElement(
+//   "div",
+//   { id: "parent" },
+//   React.createElement("div", { id: "child" }, [
+//     React.createElement("h1", {}, "I am h1 tag"),
+//     React.createElement("h2", {}, "I am h2 tag"),
+//   ])
+// );
+
+// React Element
+// const elem = <span>React Element</span>;
+
+const Title = () => {
+  <h1>Hello Radhama from Title Component</h1>;
+};
+
+const HeadingComponent = () => {
+  <div>
+    <Title />
+    <h1>Hello From Heading Component</h1>
+  </div>;
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-console.log(root);
-
-root.render(parent);
+root.render(<HeadingComponent />);

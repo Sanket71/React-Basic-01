@@ -4,7 +4,9 @@
   "description": "This is sanket meshiya learning from Akshay saini ",
   "main": "App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -29,8 +31,5 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  },
-  "browserlist": [
-    "last 2  version"
-  ]
+  }
 }
